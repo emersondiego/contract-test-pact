@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:consumer": "jest --runInBand __tests__/contract/consumer/consumer.spec.js"
+    "test:consumer": "jest --runInBand __tests__/contract/consumer/consumer.spec.js",
+    "publish:broker": "node ./__tests__/contract/broker/publish.js",
+    "publish:pactflow": "pact-broker publish ./pacts --consumer-app-version=1.0.0 --broker-base-url=PACTFLOW_URI --broker-token=PACTFLOW_TOKEN"
   },
   "jest": {
     "testEnvironment": "node",
