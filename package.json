@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:consumer": "jest --runInBand __tests__/contract/consumer/consumer.spec.js"
+    "test:consumer": "jest --runInBand __tests__/contract/consumer/consumer.spec.js",
+    "publish:broker": "node ./__tests__/contract/broker/publish.js"
   },
   "jest": {
     "testEnvironment": "node",
